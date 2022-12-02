@@ -1,0 +1,82 @@
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/UI-Interface/CustomFIeld/main/RayField.lua'))()
+
+local Window = Rayfield:CreateWindow({
+	Name = "Verny Hub Loader",
+	LoadingTitle = "Verny Hub Loader",
+	LoadingSubtitle = "by VernyFX,AdamFX",
+	ConfigurationSaving = {
+		Enabled = true,
+		FolderName = nil, -- Create a custom folder for your hub/game
+		FileName = "Big Hub"
+	},
+        Discord = {
+        	Enabled = true,
+        	Invite = "GKGG2Gje", -- The Discord invite code, do not include discord.gg/
+        	RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+        },
+	KeySystem = true, -- Set this to true to use our key system
+	KeySettings = {
+		Title = "Verny Hub",
+		Subtitle = "Key System",
+		Note = "Join the discord (discord.gg/GKGG2Gje)",
+		FileName = "SiriusKey",
+		SaveKey = false,
+		GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+		Key = "HotRogeHotAdamFr"
+	}
+})
+
+local Tab = Window:CreateTab("Script Loader", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+	Name = "Load Script",
+	Interact = "Load It!!!",
+	Callback = function()
+        if game.PlaceId == 10598587051 then
+            wait(1)
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/ACF/main/Four",true))();
+
+        elseif game.PlaceId == 2629642516 then
+            wait(1)
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/BTC/main/Three",true))();
+
+        elseif game.PlaceId == 9170761016 then
+            wait(1)
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/Magic/main/Two",true))();
+
+        elseif game.PlaceId == 11445923563 then
+            wait(1)
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/OFS/main/One",true))();
+
+        elseif game.PlaceId == 8540346411 then
+            wait(1)
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/RCX/main/Five",true))();
+
+        elseif game.PlaceId == 11162791099 then
+            wait(1)
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/sandbox/main/Six",true))();
+
+        elseif game.PlaceId ==  6875469709 then 
+            wait(1)
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/strongest/main/Seven",true))();
+
+        elseif game.PlaceId == 8750997647 then
+            wait(1)
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/TSX/main/Eight",true))();
+
+        elseif game.PlaceId == then
+            wait(1)
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/TS/main/Nine",true))();
+
+
+    end
+    wait(1)
+    Rayfield:Destroy()
+end,
+})
+
+
+
+
+
+
