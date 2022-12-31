@@ -3,34 +3,34 @@ local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shle
 local Window = Rayfield:CreateWindow({
 	Name = "Verny Hub Loader",
 	LoadingTitle = "Verny Hub Loader",
-	LoadingSubtitle = "by Verny Hub",
+	LoadingSubtitle = "by VernyFX",
 	ConfigurationSaving = {
 		Enabled = true,
 		FolderName = nil, -- Create a custom folder for your hub/game
 		FileName = "Big Hub"
 	},
         Discord = {
-        	Enabled = false,
-        	Invite = "sirius", -- The Discord invite code, do not include discord.gg/
+        	Enabled = true,
+        	Invite = "dwuSS95ecF", -- The Discord invite code, do not include discord.gg/
         	RememberJoins = true -- Set this to false to make them join the discord every time they load it up
         },
 	KeySystem = true, -- Set this to true to use our key system
 	KeySettings = {
-		Title = "Sirius Hub",
+		Title = "Verny Hub",
 		Subtitle = "Key System",
-		Note = "Join the discord (discord.gg/sirius)",
+		Note = "Join the discord (discord.gg/dwuSS95ecF)",
 		FileName = "SiriusKey",
-		SaveKey = true,
+		SaveKey = false,
 		GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
 		Key = "IwillDoLongerKeysSoLessLeakingKeys"
 	}
 })
 
-
-local Tab = Window:CreateTab("Load Script", 4483362458) -- Title, Image
+local Tab = Window:CreateTab("Script Loader", 4483362458) -- Title, Image
 
 local Button = Tab:CreateButton({
-	Name = "Load It",
+	Name = "Load Script",
+	Interact = "Load It!!!",
 	Callback = function()
         if game.PlaceId == 10598587051 then
             wait(1)
@@ -75,7 +75,16 @@ local Button = Tab:CreateButton({
 	elseif game.PlaceId == 6918802270 then
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/PNW/main/Main",true))();
 	wait(1)
+	
+	elseif game.PlaceId == 6461766546 then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/Ahs/main/Main",true))();
+	wait(1)
 
     end
-	end,
+    wait(1)
+    Rayfield:Destroy()
+end,
 })
+
+
+
