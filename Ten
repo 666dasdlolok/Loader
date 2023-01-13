@@ -19,7 +19,7 @@ local Window = Rayfield:CreateWindow({
 	   Title = "Verny Hub Key",
 	   Subtitle = "Key System",
 	   Note = "Join the discord (discord.gg/dwuSS95ecF)",
-	   FileName = "VernyHubKey",
+	   FileName = "VernyHubKeyPerm",
 	   SaveKey = true,
 	   GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
 	   Key = "FuckThisPerfectMiusGuyOng"
@@ -101,7 +101,12 @@ local Label = Tab:CreateLabel("Script is Loading Please Wait.")
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/DBU/main/Main",true))();
 			wait(1)
 
+			elseif game.PlaceId == 10824616460 then
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/666dasdlolok/Sword-Slashers/main/Main",true))();
+				wait(1)
+
+
 		end
 		wait(1)
 
-
+		
